@@ -1,0 +1,86 @@
+\documentclass{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,french]{babel}
+
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usepackage{hyperref}
+%\usepackage{pgf}
+%\logo{\pgfputat{\pgfxy(-12,6.5)}{\pgfbox[center,base]{\includegraphics[width=1cm]{images/logoForums.png}}}}
+%\usepackage[absolute,showboxes,overlay]{textpos}     % déclaration du package
+%\textblockorigin{0pt}{0pt}                           %origine des positions (coin gauche) attention, axe y vers le bas !!
+%\TPshowboxestrue                                  % affiche le contour des textblock
+%\TPshowboxesfalse                                % n'affiche pas le contour des textblock
+
+
+\definecolor{blue}{HTML}{0404B4}
+\definecolor{mauve}{HTML}{FF00BF}
+\definecolor{gris}{HTML}{AFAFAF}
+\definecolor{green}{HTML}{0B614B}
+
+%CHOIX DU THEME et/ou DE SA COULEUR
+% => essayer différents thèmes (en décommantant une des trois lignes suivantes)
+%\usetheme{PaloAlto}
+%\usetheme{Madrid}
+%\usetheme{Warsaw}
+
+\usetheme{CambridgeUS}
+
+
+% => il est possible, pour un thème donné, de modifier seulement la couleur
+%\usecolortheme{crane}
+\usecolortheme{seahorse}
+
+%\useoutertheme[left]{sidebar}
+
+\AtBeginSection[]{
+   \begin{frame}
+   \begin{center}{\Large Plan }\end{center}
+   %%% affiche en début de chaque section, les noms de sections et
+   %%% noms de sous-sections de la section en cours.
+   \tableofcontents[currentsection,hideothersubsections]
+   \end{frame} 
+}
+%Pour le TITLEPAGE
+\title[Échanger sur sa santé]{Échanger sur sa santé : apport de la linguistique pour l'analyse des forums de santé}
+\author[Ho-Dac]{Lydia-Mai Ho-Dac}
+\date{CEPEL - 5 février 2015}
+\institute[CLLE-ERSS]{Département des Sciences du Langage \& Laboratoire CLLE-ERSS\\Axe CARTEL (Corpus, Applications et Ressources pour le Traitement et l'Etude du Langage)}
+
+%\pgfdeclareimage[height=1.0cm]{logoF}{images/logoForums.png}
+%\logo{\pgfuseimage{logoF}}
+%\titlegraphic{\vspace{8cm}}% to push the other text to the top
+
+
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%\addtobeamertemplate{footline}{\insertframenumber/\inserttotalframenumber}
+\begin{document}
+
+%%%%%%%%%%%%D1%%%%%%%%%%%%%%%%%
+
+\begin{frame}[plain]
+	\titlepage 
+\end{frame}
+
+
+
+%%%%%%%%%%%D2%%%%%%%%%%%%%%%%%%
+\begin{frame}{Plan}
+   \tableofcontents[hidesubsections]
+\end{frame}
+
+\end{document}
